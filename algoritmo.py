@@ -16,8 +16,8 @@ def exponenciacion(n, x, p):
 
 
 if __name__ == '__main__':
-    n = 131.074
-    p = 253
-    result = exponenciacion(131074, 1, p)
+    n = 50
+    p = 461
+    result = exponenciacion(n, 3, p)
     print(result)
 
