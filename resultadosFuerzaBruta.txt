@@ -1,3 +1,5 @@
+Clave comun intercambio Alice y Bob ejercicio 3: 
+z = 117207
 Clave comun intercambio Pablo Corcoles y Pablo de Haro: 
 z = 177
 Clave comun intercambio Gema Lopez y Paloma Toboso: 
