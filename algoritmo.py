@@ -18,6 +18,11 @@ def exponenciacion(n, x, p):
 if __name__ == '__main__':
     n = 50
     p = 461
-    result = exponenciacion(n, 3, p)
-    print(result)
-
+    z1 = exponenciacion(n, 3, p)
+    print("Mi z1 es: ", z1)
+    print("")
+    print("Recibo z2 de Pablo de Haro: 174")
+    z2 = 174
+    print("Calculo el valor comun y secreto con su z2 y mi exponente (x) secreto y el primo p igual para los dos z = z2^x mod p")
+    z = exponenciacion(z2, 3, p)
+    print("El valor z comun es: ", z)
