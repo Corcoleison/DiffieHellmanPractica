@@ -1,5 +1,7 @@
 import math
 
+#Esta funcion la habiamos creado para truncar numeros decimales
+#Pues no sabiamos si habia que utilizar numeros decimales en el ejemplo de la practica
 def trunc(f, n):
     return math.floor(f * 10 ** n) / 10 ** n
 
@@ -52,6 +54,8 @@ def descifrar(n,p,z1,z2):
     print("La clave comun calculada mendiante (z=z2^x mod p) es:", clave_comun2)
     print("La clave comun calculada mendiante (z=n^x*y mod p) es:", clave_comun3)
 
+    return clave_comun
+
 
 
 if __name__ == '__main__':
@@ -59,13 +63,35 @@ if __name__ == '__main__':
     print("Con el metodo descifrar conseguimos obtener la clave comun (z) mediante los datos que compartimos n, p, z1 y z2")
     print("")
     print("Intercambio entre Pablo Corcoles y Pablo de Haro (El de nuestro grupo)")
-    descifrar(50,461,69,174) # descifrar(n,p,z1,z2)
+    clave_pablos= descifrar(50,461,69,174) # descifrar(n,p,z1,z2)
     print("\n")
     print("Intercambio entre Gema Lopez y Paloma Toboso")
-    descifrar(1456, 29833, 8382, 18106)
+    clave_gema_paloma=descifrar(1456, 29833, 8382, 18106)
     print("\n")
     print("Intercambio entre Javier Martinez y Juan Manuel Verdejo")
-    descifrar(10, 541, 536, 382)
+    clave_javi_juan= descifrar(10, 541, 536, 382)
     print("\n")
     print("Intercambio entre Maria Martinez y Amparo Martinez")
-    descifrar(253, 7411, 4823, 3660)
+    clave_maria_amparo=descifrar(253, 7411, 4823, 3660)
+    outF = open("resultadosFuerzaBruta.txt", "w")
+    outF.write("Clave comun intercambio Pablo Corcoles y Pablo de Haro: ")
+    outF.write("\n")
+    outF.write("z = ")
+    outF.write(str(clave_pablos))
+    outF.write("\n")
+    outF.write("Clave comun intercambio Gema Lopez y Paloma Toboso: ")
+    outF.write("\n")
+    outF.write("z = ")
+    outF.write(str(clave_gema_paloma))
+    outF.write("\n")
+    outF.write("Clave comun intercambio Javier Martinez y Juan Manuel Verdejo: ")
+    outF.write("\n")
+    outF.write("z = ")
+    outF.write(str(clave_javi_juan))
+    outF.write("\n")
+    outF.write("Clave comun intercambio Maria Martinez y Amparo Martinez: ")
+    outF.write("\n")
+    outF.write("z = ")
+    outF.write(str(clave_maria_amparo))
+    outF.write("\n")
+    outF.close()

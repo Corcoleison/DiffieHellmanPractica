@@ -1,0 +1,8 @@
+Clave comun intercambio Pablo Corcoles y Pablo de Haro: 
+z = 177
+Clave comun intercambio Gema Lopez y Paloma Toboso: 
+z = 17471
+Clave comun intercambio Javier Martinez y Juan Manuel Verdejo: 
+z = 380
+Clave comun intercambio Maria Martinez y Amparo Martinez: 
+z = 1326
